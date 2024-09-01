@@ -8,4 +8,140 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: hsl(210, 46%, 95%);
+    font-family: "Manrope", sans-serif;
+}
+
+main {
+    max-width: 800px;
+    display: flex;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#main-img {
+    width: 300px;
+    border-radius: 10px 0 0 10px;
+}
+
+#content {
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#title {
+    color: hsl(217, 19%, 35%);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#details {
+    color: hsl(212, 23%, 69%);
+    font-weight: bold;
+    font-size: 13px;
+}
+
+#info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#info-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#info-group>div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+#name {
+    color: hsl(217, 19%, 35%);
+    font-weight: bold;
+    font-size: 13px;
+}
+
+#date {
+    color: hsl(217, 19%, 35%);
+    font-size: 13px;
+}
+
+#share-icon-container {
+    width: 20px;
+    height: 20px;
+    background-color: hsl(210, 46%, 95%);
+    padding: 3px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#icon-share {
+    width: 10px;
+    height: 10px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    width: 120px;
+    background-color: hsl(217, 19%, 35%);
+    color: hsl(212, 23%, 69%);
+    text-align: center;
+    font-size: 8px;
+    letter-spacing: 3px;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext img {
+    width: 10px;
+    height: 10px;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: hsl(217, 19%, 35%) transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip:hover {
+    background-color: hsl(217, 19%, 35%) !important;
+}
+
+#avatar {
+    height: 40px;
+    border-radius: 50%;
 }
