@@ -73,8 +73,8 @@ main {
 }
 
 #share-icon-container {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     background-color: hsl(210, 46%, 95%);
     padding: 3px;
     border-radius: 50%;
@@ -84,14 +84,13 @@ main {
 }
 
 #icon-share {
-    width: 10px;
-    height: 10px;
+    width: 13px;
+    height: 13px;
 }
 
 .tooltip {
     position: relative;
     display: inline-block;
-    border-bottom: 1px dotted black;
 }
 
 .tooltip .tooltiptext {
